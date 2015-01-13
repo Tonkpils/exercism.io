@@ -64,6 +64,12 @@ ground by the efforts of any single person.
 
 ## Setup
 
+**TODOS for Vagrant + Docker**
+
+1. Install [Vagrant](https://www.vagrantup.com/downloads) and [Virtualbox](https://www.virtualbox.org/wiki/Downloads) to be able to run the samples.
+
+
+<!--
 At the moment the setup instructions are skewed heavily in favor of linux and
 Mac OS X. This doesn't mean you can't develop on Windows, only that we don't
 yet know how to get everything set up for Windows. We're hoping to address
@@ -87,7 +93,7 @@ that soon!
 1. Login at http://localhost:4567.
 1. You can view the emails sent in [MailCatcher](http://mailcatcher.me/) in your browser at [localhost:1080](http://localhost:1080).
 1. Work through 'Frontend development setup' below and run lineman for correct styling at http://localhost:4567
-
+-->
 ## Frontend development setup
 1. Install node and npm
   * osx: brew install node

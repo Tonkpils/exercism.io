@@ -3,7 +3,7 @@ postgres: &postgres
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: localhost
+  host: ENV['DATABASE_URL']
   username: exercism
   password: apples
 

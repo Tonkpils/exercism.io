@@ -3,7 +3,7 @@ postgres: &postgres
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: ENV['DATABASE_URL']
+  host: <%= ENV["DB_HOST"] %>
   username: exercism
   password: apples
 
@@ -13,4 +13,4 @@ test:
 
 development:
   <<: *postgres
-  database: exercism_development
+  database: <%= ENV['DB_NAME'] %>

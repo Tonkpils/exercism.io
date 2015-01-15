@@ -31,11 +31,7 @@ module DB
     end
 
     def yaml
-      if ENV['RACK_ENV'] == 'production'
-        ERB.new(File.read(file)).result binding
-      else
-        File.read(file)
-      end
+      ERB.new(File.read(file)).result binding
     end
   end
 

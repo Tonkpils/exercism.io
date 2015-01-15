@@ -2,6 +2,9 @@ require 'active_support' # Must be required before active_record
 require 'active_record'
 require 'faraday'
 
+require 'db/connection'
+DB::Connection.establish
+
 require 'exercism/explore'
 
 require 'exercism/assumable_user'
@@ -43,8 +46,6 @@ require 'exercism/log_entry'
 require 'exercism/language_track'
 require 'exercism/user_lookup'
 
-require 'db/connection'
-DB::Connection.establish
 require 'exercism/active_record_citext'
 
 class Exercism
